@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<app-page-header title="Media Speaks" link="Media"></app-page-header>
+
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio sections-bg">
+    <div class="container" data-aos="fade-up">
+
+        <!-- <div class="section-header">
+            <h2>Portfolio</h2>
+            <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
+        </div> -->
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+            <!-- 
+            <div>
+                <ul class="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-product">Product</li>
+                    <li data-filter=".filter-branding">Branding</li>
+                    <li data-filter=".filter-books">Books</li>
+                </ul>
+            </div> -->
+
+            <div class="row gy-4 portfolio-container">
+
+                <div class="col-xl-4 col-md-6 portfolio-item filter-app" *ngFor="let item of [].constructor(12); let i=index">
+                    <div class="portfolio-wrap">
+                        <a href="assets/media/media{{i+1}}.jpeg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/media/media{{i+1}}.jpeg" class="img-fluid" style="object-fit: cover; height: 300px; width: 100%;" alt=""></a>
+                        <!-- <div class="portfolio-info">
+                            <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+            </div>
+            <!-- End Portfolio Container -->
+
+        </div>
+
+    </div>
+</section>
+<!-- End Portfolio Section -->
+
+<app-footer></app-footer>

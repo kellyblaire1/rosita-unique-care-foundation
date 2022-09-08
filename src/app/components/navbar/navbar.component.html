@@ -1,0 +1,65 @@
+<!-- Navbar Start -->
+<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <a href="tel:+2348037946511">
+                <small><i class="fa fa-phone-alt me-2"></i>(+234) 803 794 6511</small>
+            </a>
+            <a href="mailto:ucare.foundation@yahoo.com">
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>ucare.foundation@yahoo.com</small>
+            </a>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Follow us:</small>
+            <a class="text-white-50 ms-3" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white-50 ms-3" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-white-50 ms-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="text-white-50 ms-3" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a routerLink="/" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="fw-bold text-white text-uppercase m-0">Rosita</h1>
+            <div class="small">Unique Care Foundation</div>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <!-- <a [routerLink]="item.link" [routerLinkActive]="item.label==='Home'?'':'active'" class="nav-item nav-link" *ngFor="let item of navbar; let i=index">{{item.label}}</a> -->
+                <a routerLink="/" class="nav-item nav-link">Home</a>
+                <a routerLink="/about-us" class="nav-item nav-link">Who We Are</a>
+                <div class="nav-item dropdown" [hidden]="true">
+                    <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
+                    <div class="dropdown-menu m-0">
+                        <a routerLink="/about-us" class="dropdown-item">About Us</a>
+                        <a routerLink="/about/objectives" class="dropdown-item">Our Objectives</a>
+                        <a routerLink="/about/our-team" class="dropdown-item">Our Team</a>
+                        <a routerLink="/about/thematic-focus-areas" class="dropdown-item">Thematic Focus Areas</a>
+                        <a routerLink="/about/swot" class="dropdown-item">SWOT</a>
+                        <a routerLink="/about/administration" class="dropdown-item">Administration</a>
+                    </div>
+                </div>
+                <a routerLink="/what-we-do" class="nav-item nav-link">What We Do</a>
+                <a routerLink="/our-team" class="nav-item nav-link">Our Team</a>
+                <a routerLink="/media" class="nav-item nav-link">Media</a>
+                <a routerLink="/contact" class="nav-item nav-link">Contact</a>
+                <a href="https://blog.rositauniquecarefoundation.org" target="_blank" class="nav-item nav-link">Blog</a>
+                <a routerLink="/donate" class="nav-item nav-link btn btn-primary px-3 py-md-0 my-3 d-grid justify-content-center align-items-center">Donate Now</a>
+                <!-- <div class="nav-item nav-link d-lg-flex ms-2">
+                    <a class="btn btn-primary" routerLink="/donate">
+                        Donate Now
+                    </a>
+                </div> -->
+            </div>
+            <!-- <div class="d-nonex d-lg-flex ms-2">
+                <a class="btn btn-primary py-2 px-3" routerLink="/donate">
+                    Donate Now
+                </a>
+            </div> -->
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
